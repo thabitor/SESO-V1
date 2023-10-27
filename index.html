@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> Charity | Teamplate</title>
+    <title> SESO </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo-rednobg.png">
 
 	<!-- CSS here -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -65,10 +65,10 @@
                                         <form action="#">
                                             <div class="select-itms">
                                                 <select name="select" id="select1">
-                                                    <option value="">FR</option>
-                                                    <option value="">NL</option>
-                                                    <option value="">EN</option>
-                                                    <option value="">ES</option>
+                                                    <option value="french">FR</option>
+                                                    <option value="dutch">NL</option>
+                                                    <option value="english">EN</option>
+                                                    <option value="spanish">ES</option>
                                                 </select>
                                             </div>
                                         </form>
@@ -96,9 +96,13 @@
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">                                                                                          
-                                                <li><a href="about.html">Qui sommes-nous ?</a></li>
-                                                <li><a href="program.html">Nos projets</a></li>
-                                                <li><a href="events.html">Nos partenaires</a></li>
+                                                <li><a href="about.html">Qui sommes-nous ?</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="service-ssg.html">Missions</a></li>
+                                                        <li><a href="service-adpi.html">Historique</a></li>
+                                                        <li><a href="service-ttmena.html">Philosophie</a></li>
+                                                    </ul>
+                                                </li>
                                                 <li><a href="services.html">Nos services</a>
                                                     <ul class="submenu">
                                                         <li><a href="service-ssg.html">Service Social Général</a></li>
@@ -107,6 +111,14 @@
                                                         <li><a href="service-reab.html">Retour volontaire (REAB)</a></li>
                                                     </ul>
                                                 </li>
+                                                <li><a href="program.html">Nos projets</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="service-ssg.html">Culture</a></li>
+                                                        <li><a href="service-adpi.html">Logement</a></li>
+                                                        <li><a href="service-ttmena.html">Communautaire</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="events.html">Nos partenaires</a></li>
                                                 <li><a href="contact.html">Contact</a></li>
                                             </ul>
                                         </nav>
@@ -244,22 +256,29 @@
                     <div class="about-caption mb-50">
                         <!-- Section Tittle -->
                         <div class="section-tittle mb-35">
-                            <span>About our foundetion</span>
-                            <h2>We Are In A Mission To  Help Helpless</h2>
+                            <span>Qui sommes-nous ?</span>
+                            <h2>Contre les inégalités sociales et les discriminations.</h2>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,mod tempor incididunt ut labore et dolore magna aliqua. Utnixm, quis nostrud exercitation ullamc.</p>
-                        <p>Lorem ipvsum dolor sit amext, consectetur adipisicing elit, smod tempor incididunt ut labore et dolore.</p>
+                        <p>
+                            Le SESO est une organisation belge qui lutte contre les inégalités sociales et les discriminations. Nous sommes convaincus que chacun a le droit de vivre dans une société juste et équitable, et nous travaillons pour rendre cela possible.
+                            <p>Nous nous concentrons sur trois domaines principaux :</p>
+                            <ul>
+                            <li><p><b>Lutter contre les violences conjugales et intrafamiliales.</b> Nous soutenons les victimes, sensibilisons le public et travaillons à la prévention de ces violences.</p></li>
+                            <li><p><b>Promouvoir l'inclusion des personnes migrantes et réfugiées.</b> Nous luttons contre les préjugés et les discriminations, et nous travaillons à favoriser l'intégration des personnes migrantes et réfugiées dans la société belge.</p></li>
+                            <li><p><b>Promouvoir la participation citoyenne.</b> Nous encourageons les citoyens à s'impliquer dans la vie démocratique et à faire entendre leur voix.</p></li>
+                            </p> </ul>
+                        <p>Le SESO est une organisation pluraliste et indépendante. Nous sommes financés par des fonds publics et privés, et nous comptons plus de 200 membres associatifs.
+                            
+                            Notre équipe est composée de professionnels qualifiés et passionnés. Nous travaillons en étroite collaboration avec les pouvoirs publics, les associations et les citoyens pour construire une société plus juste et plus équitable.
+                            
+                            Ensemble, nous pouvons faire la différence !</p>
                     </div>
-                    <a href="about.html" class="btn">About US</a>
+                    <a href="about.html" class="btn">En savoir plus</a>
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <!-- about-img -->
                     <div class="about-img ">
-                        <div class="about-font-img d-none d-lg-block">
-                            <img src="assets/img/gallery/about2.png" alt="">
-                        </div>
-                        <div class="about-back-img ">
-                            <img src="assets/img/gallery/about1.png" alt="">
+                            <img src="assets/img/gallery/about-brussels-seso-sm.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -268,12 +287,12 @@
     </section>
     <!-- About Law End-->
     <!-- Our Cases Start -->
-    <div class="our-cases-area section-padding30">
+    <!-- <div class="our-cases-area section-padding30">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
+                <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10"> -->
                     <!-- Section Tittle -->
-                    <div class="section-tittle text-center mb-80">
+                    <!-- <div class="section-tittle text-center mb-80">
                         <span>Our Cases you can see</span>
                         <h2>Explore our latest causes that we works </h2>
                     </div>
@@ -286,9 +305,9 @@
                             <img src="assets/img/gallery/case1.png" alt="">
                         </div>
                         <div class="cases-caption">
-                            <h3><a href="#">Ensure Education For Every Poor Children</a></h3>
+                            <h3><a href="#">Ensure Education For Every Poor Children</a></h3> -->
                             <!-- Progress Bar -->
-                            <div class="single-skill mb-15">
+                            <!-- <div class="single-skill mb-15">
                                 <div class="bar-progress">
                                     <div id="bar1" class="barfiller">
                                         <div class="tipWrap">
@@ -297,9 +316,9 @@
                                         <span class="fill" data-percentage="70"></span>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- / progress -->
-                            <div class="prices d-flex justify-content-between">
+                            <!-- <div class="prices d-flex justify-content-between">
                                 <p>Raised:<span> $20,000</span></p>
                                 <p>Goal:<span> $35,000</span></p>
                             </div>
@@ -312,9 +331,9 @@
                             <img src="assets/img/gallery/case2.png" alt="">
                         </div>
                         <div class="cases-caption">
-                            <h3><a href="#">Providing Healthy Food For The Children</a></h3>
+                            <h3><a href="#">Providing Healthy Food For The Children</a></h3> -->
                             <!-- Progress Bar -->
-                            <div class="single-skill mb-15">
+                            <!-- <div class="single-skill mb-15">
                                 <div class="bar-progress">
                                     <div id="bar2" class="barfiller">
                                         <div class="tipWrap">
@@ -323,9 +342,9 @@
                                         <span class="fill" data-percentage="25"></span>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- / progress -->
-                            <div class="prices d-flex justify-content-between">
+                            <!-- <div class="prices d-flex justify-content-between">
                                 <p>Raised:<span> $20,000</span></p>
                                 <p>Goal:<span> $35,000</span></p>
                             </div>
@@ -338,9 +357,9 @@
                             <img src="assets/img/gallery/case3.png" alt="">
                         </div>
                         <div class="cases-caption">
-                            <h3><a href="#">Supply Drinking Water For  The People</a></h3>
+                            <h3><a href="#">Supply Drinking Water For  The People</a></h3> -->
                             <!-- Progress Bar -->
-                            <div class="single-skill mb-15">
+                            <!-- <div class="single-skill mb-15">
                                 <div class="bar-progress">
                                     <div id="bar3" class="barfiller">
                                         <div class="tipWrap">
@@ -349,9 +368,9 @@
                                         <span class="fill" data-percentage="50"></span>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- / progress -->
-                            <div class="prices d-flex justify-content-between">
+                            <!-- <div class="prices d-flex justify-content-between">
                                 <p>Raised:<span> $20,000</span></p>
                                 <p>Goal:<span> $35,000</span></p>
                             </div>
@@ -360,7 +379,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Our Cases End -->
     <!-- Featured_job_start -->
     <section class="featured-job-area section-padding30 section-bg2" data-background="assets/img/gallery/section_bg03.png">
@@ -779,9 +798,9 @@
                         <div class="row d-flex justify-content-between align-items-center">
                             <div class="col-xl-10 col-lg-9 ">
                                 <div class="footer-copy-right">
-                                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                                    <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Services Social des Solidarités </p>
+  <p>This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
                                 </div>
                             </div>
                             <div class="col-xl-2 col-lg-3">
