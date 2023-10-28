@@ -152,7 +152,7 @@
                 ob_start();
                 ?>
                 $(function(){
-                    var ed = new nicEditor({iconsPath : '<?php echo K_SYSTEM_THEME_URL; ?>assets/', buttonList : <?php echo $this->buttons; ?><?php if($this->maxheight){echo ', maxHeight : '.$this->maxheight;}?>}).panelInstance('<?php echo $input_id; ?>');
+                    var ed = new nicEditor({iconsPath : '<?php echo K_SYSTEM_THEME_URL; ?>src/assets/', buttonList : <?php echo $this->buttons; ?><?php if($this->maxheight){echo ', maxHeight : '.$this->maxheight;}?>}).panelInstance('<?php echo $input_id; ?>');
 
                     $('#btn_submit').bind("my_submit", function(event){
                         var el = nicEditors.findEditor('<?php echo $input_id ?>');
@@ -184,10 +184,10 @@
                 // This 'idx' will not be present in the cloned rows. We use this property to avoid executing JavaScript in template row.
                 ob_start();
                 ?>
-                <img src="<?php echo K_SYSTEM_THEME_URL; ?>assets/blank.gif" alt="" id="<?php echo $input_id ?>_dummyimg" onload="
+                <img src="<?php echo K_SYSTEM_THEME_URL; ?>src/assets/blank.gif" alt="" id="<?php echo $input_id ?>_dummyimg" onload="
                     el=$('#<?php echo $input_id ?>_dummyimg');
                     if(!el.attr('idx')){
-                    var ed = new nicEditor({iconsPath : '<?php echo K_SYSTEM_THEME_URL; ?>assets/', buttonList : <?php echo $this->buttons; ?><?php if($this->maxheight){echo ', maxHeight : '.$this->maxheight;}?>}).panelInstance('<?php echo $input_id; ?>');
+                    var ed = new nicEditor({iconsPath : '<?php echo K_SYSTEM_THEME_URL; ?>src/assets/', buttonList : <?php echo $this->buttons; ?><?php if($this->maxheight){echo ', maxHeight : '.$this->maxheight;}?>}).panelInstance('<?php echo $input_id; ?>');
 
                     $('#btn_submit').bind('my_submit', function(event){
                         var el = nicEditors.findEditor('<?php echo $input_id ?>');

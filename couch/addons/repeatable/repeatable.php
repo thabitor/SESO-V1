@@ -475,7 +475,7 @@
                                 }
                                 if( $this->stacked_layout ){
                                     echo( '</div>' );
-                                    echo( '<img src="'.K_SYSTEM_THEME_URL.'assets/blank.gif" alt="" onload="
+                                    echo( '<img src="'.K_SYSTEM_THEME_URL.'src/assets/blank.gif" alt="" onload="
                                         var el=$(\'#data-xxx-dummyimg\');
                                         if(!el.attr(\'idx\')){
                                             var row = el.closest(\'tr\');

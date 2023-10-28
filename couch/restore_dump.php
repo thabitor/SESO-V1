@@ -57,7 +57,7 @@
         $progress = 0;
         $nonce = $FUNCS->create_nonce( 'restore_dump_'.$offset.'_'.$lines );
 
-        $icon = K_SYSTEM_THEME_URL.'assets/open-iconic.svg#info';
+        $icon = K_SYSTEM_THEME_URL.'src/assets/open-iconic.svg#info';
         $url = K_ADMIN_URL.'restore_dump.php?offset='.$offset.'&lines='.$lines.'&nonce='.$nonce;
         $jquery = K_ADMIN_URL.'includes/jquery-3.x.min.js?v='.K_COUCH_BUILD;
         $out=<<<EOS
@@ -82,7 +82,7 @@ EOS;
 
         // show results
         if( $dump->error  ){
-            $icon = K_SYSTEM_THEME_URL.'assets/open-iconic.svg#circle-x';
+            $icon = K_SYSTEM_THEME_URL.'src/assets/open-iconic.svg#circle-x';
             $out=<<<EOS
                 <div class="alert alert-error alert-icon" style="margin-top: 0;">
                     <svg class="i"><use xlink:href="$icon"></use></svg>
@@ -99,7 +99,7 @@ EOS;
                 $progress = ceil( ($offset / $filesize) * 100 );
                 $nonce = $FUNCS->create_nonce( 'restore_dump_'.$offset.'_'.$lines );
 
-                $icon = K_SYSTEM_THEME_URL.'assets/open-iconic.svg#info';
+                $icon = K_SYSTEM_THEME_URL.'src/assets/open-iconic.svg#info';
                 $url = K_ADMIN_URL.'restore_dump.php?offset='.$offset.'&lines='.$lines.'&nonce='.$nonce;
                 $jquery = K_ADMIN_URL.'includes/jquery-3.x.min.js?v='.K_COUCH_BUILD;
                 $out=<<<EOS
@@ -123,7 +123,7 @@ EOS;
                 // HOOK: restore_dump_complete
                 $FUNCS->dispatch_event( 'restore_dump_complete' );
 
-                $icon = K_SYSTEM_THEME_URL.'assets/open-iconic.svg#check';
+                $icon = K_SYSTEM_THEME_URL.'src/assets/open-iconic.svg#check';
                 $url =  K_ADMIN_URL . K_ADMIN_PAGE;
                 $out=<<<EOS
                 <div class="alert alert-success alert-icon" style="margin-top: 0;">

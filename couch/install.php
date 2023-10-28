@@ -599,13 +599,13 @@
 
             <cms:if k_install_error >
                 <div class="alert alert-error alert-icon">
-                    <svg class="i"><use xlink:href="<cms:php>echo K_SYSTEM_THEME_URL;</cms:php>assets/open-iconic.svg#circle-x"></use></svg>
+                    <svg class="i"><use xlink:href="<cms:php>echo K_SYSTEM_THEME_URL;</cms:php>src/assets/open-iconic.svg#circle-x"></use></svg>
                     <h2>Installation failed!</h2>
                     <cms:show k_install_error />
                 </div>
             <cms:else />
                 <div class="alert alert-success alert-icon">
-                    <svg class="i"><use xlink:href="<cms:php>echo K_SYSTEM_THEME_URL;</cms:php>assets/open-iconic.svg#check"></use></svg>
+                    <svg class="i"><use xlink:href="<cms:php>echo K_SYSTEM_THEME_URL;</cms:php>src/assets/open-iconic.svg#check"></use></svg>
                     <h2>Installation successful!</h2>
                     Please <a href="<cms:php> echo K_ADMIN_URL . K_ADMIN_PAGE; </cms:php>">log in</a> using the information you provided.
                 </div>
@@ -613,14 +613,14 @@
         <cms:else />
             <cms:if k_error >
                 <div class="alert alert-error alert-icon">
-                    <svg class="i"><use xlink:href="<cms:php>echo K_SYSTEM_THEME_URL;</cms:php>assets/open-iconic.svg#circle-x"></use></svg>
+                    <svg class="i"><use xlink:href="<cms:php>echo K_SYSTEM_THEME_URL;</cms:php>src/assets/open-iconic.svg#circle-x"></use></svg>
                     <cms:each k_error >
                         <cms:show item /><br/>
                     </cms:each>
                 </div>
             <cms:else />
                 <div class="alert alert-notice alert-icon">
-                    <svg class="i"><use xlink:href="<cms:php>echo K_SYSTEM_THEME_URL;</cms:php>assets/open-iconic.svg#warning"></use></svg>
+                    <svg class="i"><use xlink:href="<cms:php>echo K_SYSTEM_THEME_URL;</cms:php>src/assets/open-iconic.svg#warning"></use></svg>
                     Installation required
                 </div>
             </cms:if>
@@ -630,29 +630,29 @@
                     required="1" validator='title_ready|min_len=4'
                     validator_msg='title_ready=Only lowercase characters, numerals, hyphen and underscore permitted'
                     autofocus="autofocus" class="text" placeholder="Super-Admin Username" 'required="required"' value=""/>
-                <svg class="i"><use xlink:href="<cms:php>echo K_SYSTEM_THEME_URL;</cms:php>assets/open-iconic.svg#person"></use></svg>
+                <svg class="i"><use xlink:href="<cms:php>echo K_SYSTEM_THEME_URL;</cms:php>src/assets/open-iconic.svg#person"></use></svg>
             </div>
 
             <div class="field prepend">
                 <cms:input type="text" id="k_user_email" name="email" required='1' validator='email'
                     class="text" placeholder="Email Address" 'required="required"' value=""/>
-                <svg class="i"><use xlink:href="<cms:php>echo K_SYSTEM_THEME_URL;</cms:php>assets/open-iconic.svg#envelope-closed"></use></svg>
+                <svg class="i"><use xlink:href="<cms:php>echo K_SYSTEM_THEME_URL;</cms:php>src/assets/open-iconic.svg#envelope-closed"></use></svg>
             </div>
 
             <div class="field prepend">
                 <cms:input type="password" id="k_user_pwd" name="password" required="1" validator='min_len=5'
                     autocorrect="off" autocapitalize="off" spellcheck="false" class="password" placeholder="Password" 'required="required"' value="" />
-                <svg class="i"><use xlink:href="<cms:php>echo K_SYSTEM_THEME_URL;</cms:php>assets/open-iconic.svg#lock-locked"></use></svg>
+                <svg class="i"><use xlink:href="<cms:php>echo K_SYSTEM_THEME_URL;</cms:php>src/assets/open-iconic.svg#lock-locked"></use></svg>
             </div>
 
             <div class="field prepend">
                 <cms:input type="password" id="k_user_pwd_repeat" name="repeat_password" required="1" validator='matches_field=password'
                     autocorrect="off" autocapitalize="off" spellcheck="false" class="password" placeholder="Repeat Password" 'required="required"' value="" />
-                <svg class="i"><use xlink:href="<cms:php>echo K_SYSTEM_THEME_URL;</cms:php>assets/open-iconic.svg#lock-locked"></use></svg>
+                <svg class="i"><use xlink:href="<cms:php>echo K_SYSTEM_THEME_URL;</cms:php>src/assets/open-iconic.svg#lock-locked"></use></svg>
             </div>
 
             <div class="simple-btns">
-                <button class="btn btn-primary" name="k_install" type="submit"><svg class="i"><use xlink:href="<cms:php>echo K_SYSTEM_THEME_URL;</cms:php>assets/open-iconic.svg#check"></use></svg>Install</button>
+                <button class="btn btn-primary" name="k_install" type="submit"><svg class="i"><use xlink:href="<cms:php>echo K_SYSTEM_THEME_URL;</cms:php>src/assets/open-iconic.svg#check"></use></svg>Install</button>
             </div>
         </cms:if>
     </cms:form>

@@ -147,14 +147,14 @@
             }
             $value = $this->get_data();
             if( $value ) $value .= '?='.time();
-            $tb_preview = $value ? $value : K_SYSTEM_THEME_URL . 'assets/upload-image.gif';
-            $tb_preview_icon = $value ? $value : K_SYSTEM_THEME_URL . 'assets/upload-image.gif';
+            $tb_preview = $value ? $value : K_SYSTEM_THEME_URL . 'src/assets/upload-image.gif';
+            $tb_preview_icon = $value ? $value : K_SYSTEM_THEME_URL . 'src/assets/upload-image.gif';
 
             define( 'JCROP_URL', K_ADMIN_URL . 'addons/jcropthumb/' );
-            $FUNCS->load_js( JCROP_URL . 'assets/jquery.bpopup.min.js' );
-            $FUNCS->load_js( JCROP_URL . 'assets/jquery.Jcrop.min.js' );
-            $FUNCS->load_css( JCROP_URL . 'assets/jquery.Jcrop.min.css' );
-            $FUNCS->load_css( JCROP_URL . 'assets/jcropthumb.css' );
+            $FUNCS->load_js( JCROP_URL . 'src/assets/jquery.bpopup.min.js' );
+            $FUNCS->load_js( JCROP_URL . 'src/assets/jquery.Jcrop.min.js' );
+            $FUNCS->load_css( JCROP_URL . 'src/assets/jquery.Jcrop.min.css' );
+            $FUNCS->load_css( JCROP_URL . 'src/assets/jcropthumb.css' );
 
             if( $this->show_preview ){
                 $html .= '<div class="img-preview">';

@@ -1117,7 +1117,7 @@
     function _render_icon( $name ){
         global $FUNCS;
 
-        $html .= '<svg class="i"><use xlink:href="'.K_SYSTEM_THEME_URL.'assets/open-iconic.svg#'.$FUNCS->ti($name).'"></use></svg>';
+        $html .= '<svg class="i"><use xlink:href="'.K_SYSTEM_THEME_URL.'src/assets/open-iconic.svg#'.$FUNCS->ti($name).'"></use></svg>';
 
         return $html;
     }
